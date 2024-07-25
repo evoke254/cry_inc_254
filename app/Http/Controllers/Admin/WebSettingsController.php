@@ -18,7 +18,7 @@ class WebSettingsController extends Controller
 
     /**
      * Display The Basic Settings Page
-     * 
+     *
      * @return view
      */
     public function basicSettings()
@@ -116,7 +116,7 @@ class WebSettingsController extends Controller
 
     /**
      * Display The Image Assets Page
-     * 
+     *
      * @return view
      */
     public function imageAssets()
@@ -138,6 +138,7 @@ class WebSettingsController extends Controller
             'site_fav'          => 'nullable|image|mimes:png,jpeg,jpg,webp,svg',
             'site_fav_dark'     => 'nullable|image|mimes:png,jpeg,jpg,webp,svg',
         ]);
+        dd($validator->validate());
         $validated = $validator->validate();
 
         $basic_settings = BasicSettingsProvider::get();
@@ -170,7 +171,7 @@ class WebSettingsController extends Controller
 
     /**
      * Display The SEO Setup Page
-     * 
+     *
      * @return view
      */
     public function setupSeo()
