@@ -138,7 +138,7 @@ class WebSettingsController extends Controller
             'site_fav'          => 'nullable|image|mimes:png,jpeg,jpg,webp,svg',
             'site_fav_dark'     => 'nullable|image|mimes:png,jpeg,jpg,webp,svg',
         ]);
-        dd($validator->validate());
+        dd( $validator->validate() );
         $validated = $validator->validate();
 
         $basic_settings = BasicSettingsProvider::get();
