@@ -131,11 +131,11 @@ class BaseController extends Controller {
     }
 
     public function migrationSubmit(Request $request, DBHelper $db) {
-        try{
+        /*try{
             $db->migrate();
         }catch(Exception $e) {
             return back()->with('error',$e->getMessage());
-        }
+        }*/
         return redirect()->route('project.install.admin.setup');
     }
 
@@ -144,13 +144,14 @@ class BaseController extends Controller {
         if(RequirementHelper::step() !== "PASSED") return redirect()->route('project.install.requirements');
         if(ValidationHelper::step() !== "PASSED") return redirect()->route('project.install.validation.form');
         if(DBHelper::step() !== "PASSED") return redirect()->route('project.install.database.config');
-        if(DBHelper::step('migrate') !== "PASSED") return redirect()->route('project.install.migration.view');
+
+      //  if(DBHelper::step('migrate') !== "PASSED") return redirect()->route('project.install.migration.view');
 
         return view('installer.pages.admin-setup',compact('page_title'));
     }
 
     public function accountUpdate(Request $request, DBHelper $db) {
-        
+
         $request->validate([
             'email'     => "required|string|email",
             'f_name'    => "required|string",
@@ -178,7 +179,7 @@ class BaseController extends Controller {
         if(RequirementHelper::step() !== "PASSED") return redirect()->route('project.install.requirements');
         if(ValidationHelper::step() !== "PASSED") return redirect()->route('project.install.validation.form');
         if(DBHelper::step() !== "PASSED") return redirect()->route('project.install.database.config');
-        if(DBHelper::step('migrate') !== "PASSED") return redirect()->route('project.install.migration.view');
+     //   if(DBHelper::step('migrate') !== "PASSED") return redirect()->route('project.install.migration.view');
         if(DBHelper::step('admin_account' !== "PASSED")) return redirect()->route('project.install.admin.setup');
 
         cache()->driver("file")->forget($helper->cache_key);

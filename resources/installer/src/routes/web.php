@@ -30,7 +30,7 @@ Route::prefix('project/install')->name('project.install.')->withoutMiddleware([S
         Route::get('admin/account/setting','accountSetup')->name('admin.setup');
         Route::post('admin/account/setting/submit','accountUpdate')->name('admin.setup.submit');
 
-        // Finish 
+        // Finish
         Route::get('finish','finish')->name('finish');
     });
 });

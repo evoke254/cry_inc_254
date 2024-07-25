@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace Project\Installer\Helpers;
 
@@ -19,7 +19,7 @@ class DBHelper {
             'DB_USERNAME'       => $data['db_user'],
             'DB_PASSWORD'       => $data['db_user_password'],
         ]);
-        
+
         $this->setStepSession();
         $this->saveDataInSession($data);
 
@@ -91,10 +91,10 @@ class DBHelper {
     }
 
     public function migrate() {
-        self::execute("php artisan migrate:fresh --seed");
+/*        self::execute("php artisan migrate:fresh --seed");
         self::execute("php artisan migrate");
         self::execute("php artisan passport:install");
-
+*/
         $this->setMigrateStepSession();
 
         $helper = new Helper();

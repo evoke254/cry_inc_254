@@ -28,10 +28,10 @@ class StartingPoint
             if(Schema::hasTable("script") && DB::table('script')->exists()) {
                 $script = DB::table('script')->first();
 
-                if($script && $filter_host != $script->client) {
+                /*if($script && $filter_host != $script->client) {
                     Config::set('starting-point.status',true);
                     Config::set('starting-point.point','/project/install/welcome');
-                }
+                }*/
             }
         }catch(Exception $e) {
             Config::set('starting-point.status',true);
@@ -44,3 +44,10 @@ class StartingPoint
         return $next($request);
     }
 }
+
+
+git add ./
+git commit -m "Ndio kudonjo"
+git remote add origin git@github.com:evoke254/cry_inc_254.git
+git branch -M main
+git push -u origin main
