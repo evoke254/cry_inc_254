@@ -1,0 +1,151 @@
+/*--------------------------------------------------------------
+# Footer-block
+--------------------------------------------------------------*/
+.footer-section {
+  background: $body--bg;
+  position: relative;
+  padding-top: 60px;
+  .single-cta i {
+    color: $base--color;
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+  }
+  .cta-text {
+    padding-left: 15px;
+    display: inline-block;
+  }
+  .cta-text h4 {
+    color: $white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .cta-text span {
+    color: #757575;
+    font-size: 15px;
+  }
+  .footer-content {
+    position: relative;
+    z-index: 2;
+  }
+  .footer-pattern img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 330px;
+    background-size: cover;
+    background-position: 100% 100%;
+  }
+  .footer-text {
+    p {
+      margin-top: 14px;
+      font-size: 14px;
+      color: $white;
+      line-height: 28px;
+    }
+    img {
+      width: 13rem;
+      margin-bottom: 10px;
+    }
+  }
+
+  .footer-social-icon span {
+    color: $white;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+  }
+  .footer-social-icon a {
+    color: $base--color;
+    font-size: 16px;
+    margin-right: 15px;
+  }
+  .footer-social-icon i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+  }
+  .facebook-bg {
+    background-color: $white;
+  }
+  .twitter-bg {
+    background-color: $white;
+  }
+  .instagram-bg {
+    background-color: $white;
+  }
+  .linkedin-bg {
+    background-color: $white;
+  }
+  .footer-widget-heading h3 {
+    color: $white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: $white;
+  }
+  .footer-widget ul li {
+    margin-bottom: 12px;
+  }
+  .footer-widget ul li a:hover {
+    color: $base--color;
+  }
+  .footer-widget ul li a {
+    color: $white;
+    text-transform: capitalize;
+  }
+  .contact {
+    p {
+      color: $white;
+    }
+  }
+  .copyright-area {
+    background-color: $body--bg;
+    padding: 15px 0;
+  }
+  .copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: $white;
+  }
+  .copyright-text p a {
+    color: $white;
+    font-weight: 600;
+  }
+  .footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .footer-menu li:hover a {
+    color: $white;
+  }
+  .footer-menu li a {
+    font-size: 14px;
+    color: $white;
+  }
+}
+
+
+
+.app-img{
+  overflow: hidden;
+  width: 120px;
+}
+.app-img img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,70 @@
+.blog {
+  overflow: hidden;
+  .text-content {
+    h3 {
+      font-size: 40px !important;
+      padding-bottom: 15px;
+      letter-spacing: 2px;
+      span {
+        color: $base--color;
+      }
+    }
+    @media only screen and (max-width: 571px) {
+      h3 {
+        font-size: 30px !important;
+      }
+    }
+    p {
+      font-size: 17px !important;
+    }
+    .top-title-content {
+      color: $base--color;
+      font-size: 18px !important;
+      font-weight: 600;
+      letter-spacing: 3px;
+    }
+  }
+  .card {
+    overflow: hidden !important;
+    border-radius: 10px !important;
+    border: none !important;
+    background-color: transparent;
+    .rating-color {
+      color: #fbc634 !important;
+    }
+    .card-body {
+      padding: 25px 0;
+    }
+    .title {
+      color: $white;
+    }
+    p {
+      color: $white;
+    }
+
+    img {
+      transition: 0.5s;
+      border-radius: 10px;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+    .icon {
+      color: $base--color;
+    }
+    .author-content {
+      margin-bottom: 20px;
+      img {
+        width: 30px;
+        border-radius: 999px;
+        margin-right: 10px;
+      }
+    }
+    .link {
+      color: $base--color;
+      margin-top: 20px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  }
+}

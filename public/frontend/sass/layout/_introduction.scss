@@ -1,0 +1,115 @@
+.banner {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  overflow: hidden;
+  @media only screen and (max-width: 571px) {
+    padding-top: 80px;
+  }
+  .top {
+    h3 {
+      font-size: 60px;
+      padding-bottom: 5px;
+      color: $white;
+      @media only screen and (max-width: 571px) {
+        font-size: 30px;
+      }
+    }
+    p {
+      font-size: 13px;
+      color: $white;
+    }
+  }
+  .banner-element {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    animation: rotate-center 300s linear infinite both;
+  }
+  .banner-content {
+    .title {
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 100;
+      font-size: 55px;
+      font-weight: 700;
+      color: $color--text;
+      @media only screen and (max-width: 768px) {
+        font-size: 35px;
+      }
+      @media screen and (width: 1024px) {
+        font-size: 45px;
+      }
+    }
+    .btn--base {
+      position: relative;
+      z-index: 100;
+    }
+
+    p {
+      font-size: 16px;
+      color: $color--text;
+      line-height: 2em;
+      padding-bottom: 30px;
+      position: relative;
+      z-index: 100;
+      width: 90%;
+      @media only screen and (max-width: 575px) {
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .banner-thumb {
+    img {
+      width: 100%;
+      height: auto;
+      display: flex;
+      margin: auto;
+      filter: hue-rotate(168deg);
+    }
+  }
+}
+
+.banner-content {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  @media only screen and (max-width: 571px) {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+  .title {
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 100;
+    font-size: 60px;
+    font-weight: 700;
+    color: $white;
+    @media only screen and (max-width: 768px) {
+      font-size: 35px;
+    }
+    @media screen and (width: 1024px) {
+      font-size: 45px;
+    }
+  }
+  p {
+    font-size: 16px;
+    color: $white;
+    line-height: 2em;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 100;
+    width: 90%;
+    @media only screen and (max-width: 575px) {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+}
