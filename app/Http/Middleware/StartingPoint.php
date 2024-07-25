@@ -44,10 +44,3 @@ class StartingPoint
         return $next($request);
     }
 }
-
-
-git add ./
-git commit -m "Ndio kudonjo"
-git remote add origin git@github.com:evoke254/cry_inc_254.git
-git branch -M main
-git push -u origin main
